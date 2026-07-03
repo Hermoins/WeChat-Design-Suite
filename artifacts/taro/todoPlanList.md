@@ -12,6 +12,8 @@ Created [](file:///d%3A/work/my_project/WeChat-Design-Suite/WeChat-Design-Suite/
 
 已在仓库中创建 taro 目录，并添加了初始说明文件：README.md
 
+已修复 Taro 依赖问题：新增 `@tarojs/react` 并可成功生成 `dist/` 目录。
+
 ---
 
 ## 1. 具体页面与 Taro page 对应关系

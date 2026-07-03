@@ -26,7 +26,14 @@ export default {
     color: "#9AA0A6",
     selectedColor: "#2E7D32",
     backgroundColor: "#ffffff",
-    borderStyle: "black"
+    borderStyle: "black",
+    // WeChat DevTools requires `tabBar.list` to be non-empty even when using custom tabBar
+    list: [
+      { pagePath: "pages/index/index", text: "首页" },
+      { pagePath: "pages/passenger-publish/index", text: "发布" },
+      { pagePath: "pages/my-trips/index", text: "行程" },
+      { pagePath: "pages/profile/index", text: "我的" }
+    ]
   },
   permission: {
     "scope.userLocation": {
