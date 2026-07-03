@@ -1,0 +1,27 @@
+.custom-tabbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 56px;
+  display: flex;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+}
+
+.tab-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #9aa0a6;
+}
+
+.tab-item.active {
+  color: #2e7d32;
+}
+
+.tab-title {
+  font-size: 12px;
+}

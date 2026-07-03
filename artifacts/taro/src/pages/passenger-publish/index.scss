@@ -1,0 +1,61 @@
+.passenger-publish {
+  padding: 16px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.picker {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.time-options {
+  display: flex;
+  gap: 8px;
+}
+
+.time-btn {
+  flex: 1;
+  font-size: 12px;
+  height: 36px;
+}
+
+.time-btn.active {
+  background: #2e7d32;
+  color: white;
+}
+
+.passenger-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.passenger-control button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}
+
+.input {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.publish-btn {
+  width: 100%;
+  margin-top: 32px;
+}

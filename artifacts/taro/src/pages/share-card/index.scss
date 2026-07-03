@@ -1,0 +1,72 @@
+.share-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+.card-container {
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.card-body {
+  margin-bottom: 16px;
+}
+
+.card-route {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-detail {
+  font-size: 12px;
+  display: block;
+  margin: 4px 0;
+  opacity: 0.9;
+}
+
+.card-footer {
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.button-group {
+  width: 100%;
+  max-width: 300px;
+}
+
+.button-group button {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.btn-share {
+  background: #667eea;
+  color: white;
+}
+
+.btn-download {
+  background: #f0f0f0;
+}

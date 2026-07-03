@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "uYbqMpAUQWQ7yenvO8LjN"
+uri = "file://artifacts/mobile/assets/images/icon.png"
+type = "image"
+title = "carpool app icon"

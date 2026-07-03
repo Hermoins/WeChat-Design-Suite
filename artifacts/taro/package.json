@@ -1,0 +1,21 @@
+{
+  "name": "@workspace/taro-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "taro dev:weapp --port 8090",
+    "build": "taro build --type weapp",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@tarojs/taro": "^5.7.0",
+    "@tarojs/components": "^5.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tarojs/cli": "^5.7.0",
+    "@tarojs/webpack5": "^5.7.0",
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "taro-carpooling",
+  "description": "Taro WeChat Mini Program - Carpooling App",
+  "appid": "wxXXXXXXXXXXXXXXXX",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "postcss": true,
+    "preloadRequest": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "autoAuditing": false,
+    "showShadowRootInWxmlPanel": true,
+    "checkSiteMap": false,
+    "checkInvalidPageTitle": false
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.30.0",
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "auto",
+    "tabSize": 2
+  }
+}

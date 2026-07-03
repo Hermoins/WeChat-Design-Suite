@@ -1,0 +1,54 @@
+.driver-board-tab {
+  padding: 16px;
+}
+
+.requests-list {
+  margin-top: 8px;
+}
+
+.list-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.request-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.request-info {
+  flex: 1;
+}
+
+.request-route {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.request-detail {
+  font-size: 12px;
+  color: #999;
+  display: block;
+}
+
+.request-note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+  display: block;
+}
+
+.accept-btn {
+  font-size: 12px;
+  height: 32px;
+  margin-left: 12px;
+}

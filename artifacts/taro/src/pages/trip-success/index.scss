@@ -1,0 +1,59 @@
+.trip-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+.success-container {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
+  background: #2e7d32;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.success-title {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.success-desc {
+  font-size: 14px;
+  color: #666;
+  display: block;
+}
+
+.button-group {
+  width: 100%;
+  max-width: 300px;
+}
+
+.button-group button {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.btn-share {
+  background: #2e7d32;
+  color: white;
+}
+
+.btn-home {
+  background: #f0f0f0;
+}
