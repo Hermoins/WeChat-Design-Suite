@@ -5,6 +5,8 @@
   "scripts": {
     "build": "taro build --type weapp & node fix-tabbar.js",
     "dev": "taro build --type weapp --watch --port 8090 & node fix-tabbar.js",
+    "dev:clean": "node -e \"const fs = require('fs'); const path = require('path'); const cache = path.join(__dirname, '.swc'); if (fs.existsSync(cache)) { fs.rmSync(cache, { recursive: true, force: true }); console.log('Cache cleared'); }\" && npm run dev",
+    "build:clean": "npm run dev:clean && npm run build",
     "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {

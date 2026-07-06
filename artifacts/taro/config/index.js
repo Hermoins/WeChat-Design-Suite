@@ -22,7 +22,11 @@ module.exports = {
     type: 'webpack5',
   },
   cache: {
-    enable: false,
+    enable: false, // 禁用缓存避免新页面编译问题
+  },
+  watch: {
+    // 监听所有页面文件变化
+    ignore: ['**/node_modules/**', '**/dist/**'],
   },
   mini: {
     postcss: {
