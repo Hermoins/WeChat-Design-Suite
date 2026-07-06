@@ -1,76 +1,139 @@
-.driver-board {
+.driver-board-page {
+  background: #f2f2f7;
+}
+
+.no-trip-text {
+  padding: 20px;
+  color: #888888;
+}
+
+.db-scroll {
   padding: 16px;
 }
 
-.trip-info {
-  background: #f0f7ff;
+.trip-info-banner {
+  background: #e8f4fd;
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 16px;
 }
 
-.trip-route {
+.trip-route-big {
   font-size: 18px;
   font-weight: bold;
+  color: #111111;
   display: block;
   margin-bottom: 8px;
 }
 
-.trip-detail {
-  font-size: 12px;
-  color: #666;
+.trip-meta-row {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  display: flex;
 }
 
-.simulate-btn {
+.trip-meta {
+  font-size: 12px;
+  color: #666666;
+}
+
+.simulate-btn-row {
   width: 100%;
   margin-bottom: 16px;
+  background: #e8f4fd;
+  border: 1px solid #1D6FA4;
+  border-radius: 12px;
+  padding: 12px 16px;
+  text-align: center;
 }
 
-.passenger-list {
-  margin-top: 16px;
+.simulate-btn-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1D6FA4;
+  text-align: center;
 }
 
-.list-title {
+.passenger-list-section {
+  margin-top: 8px;
+}
+
+.section-title {
   font-weight: bold;
   font-size: 14px;
+  color: #888888;
   margin-bottom: 12px;
   display: block;
 }
 
-.passenger-item {
+.empty-passengers {
+  padding: 24px 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.empty-p-text {
+  font-size: 14px;
+  color: #888888;
+}
+
+.passenger-item-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  background: white;
-  border: 1px solid #eee;
+  background: #ffffff;
+  border: 1px solid #e0e0e6;
   border-radius: 8px;
   margin-bottom: 8px;
 }
 
-.passenger-name {
+.passenger-item-info {
+  flex: 1;
+}
+
+.passenger-item-name {
   font-weight: bold;
+  color: #111111;
   display: block;
   margin-bottom: 4px;
 }
 
-.passenger-detail {
+.passenger-item-detail {
   font-size: 12px;
-  color: #999;
+  color: #999999;
+  display: block;
 }
 
-.passenger-actions {
-  display: flex;
+.passenger-item-actions {
+  flex-direction: row;
   gap: 8px;
+  display: flex;
 }
 
-.action-btn {
+.passenger-action-btn {
   font-size: 12px;
-  height: 32px;
-  padding: 0 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #2D9B5A;
+  min-width: 50px;
+  text-align: center;
 }
 
-.action-btn.remove {
-  background: #ff5252;
-  color: white;
+.passenger-action-btn.disabled {
+  background: #e8e8ee;
+}
+
+.passenger-action-btn .action-btn-text {
+  color: #ffffff;
+}
+
+.passenger-action-btn.disabled .action-btn-text {
+  color: #888888;
+}
+
+.passenger-action-btn.remove {
+  background: #A93226;
 }

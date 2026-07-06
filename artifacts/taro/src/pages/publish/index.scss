@@ -1,4 +1,22 @@
-.passenger-publish {
+.publish-page {
+  background: #f2f2f7;
+  min-height: 100vh;
+}
+
+.publish-header {
+  padding: 12px 20px 14px;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e6;
+}
+
+.publish-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+  display: block;
+}
+
+.publish-scroll {
   padding: 16px;
 }
 
@@ -36,13 +54,13 @@
   color: white;
 }
 
-.passenger-control {
+.control-group {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.passenger-control button {
+.control-group button {
   width: 36px;
   height: 36px;
   padding: 0;

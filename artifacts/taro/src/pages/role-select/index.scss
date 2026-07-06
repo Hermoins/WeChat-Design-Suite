@@ -1,18 +1,156 @@
-.role-select {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.role-select-page {
   min-height: 100vh;
+  background: #f2f2f7;
+  padding: 40px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.role-container {
-  width: 80%;
-  max-width: 300px;
+.role-header {
+  align-items: center;
+  margin-bottom: 40px;
   text-align: center;
 }
 
-.role-btn {
+.app-name {
+  font-size: 15px;
+  color: #999999;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.role-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+  text-align: center;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.role-sub {
+  font-size: 14px;
+  color: #888888;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+}
+
+.role-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 36px;
   width: 100%;
-  height: 44px;
-  font-size: 16px;
+}
+
+.role-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  align-items: center;
+  border: 2.5px solid transparent;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.role-card.selected {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.icon-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  background: #f2f2f7;
+  display: flex;
+}
+
+.icon-wrap.passenger {
+  background: #e8f4fd;
+}
+
+.icon-wrap.driver {
+  background: #fdf0f0;
+}
+
+.icon-text {
+  font-size: 36px;
+}
+
+.role-label {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 8px;
+  display: block;
+  text-align: center;
+}
+
+.role-desc {
+  font-size: 13px;
+  color: #888888;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+}
+
+.checkmark {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.checkmark-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.confirm-btn {
+  width: 100%;
+  background: #d0d0d8;
+  border-radius: 16px;
+  padding: 18px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.confirm-btn.disabled {
+  background: #d0d0d8;
+}
+
+.confirm-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.confirm-arrow {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.role-tip {
+  font-size: 12px;
+  color: #aaaaaa;
+  text-align: center;
+  line-height: 18px;
+  display: block;
 }

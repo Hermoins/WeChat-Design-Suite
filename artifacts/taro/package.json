@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "taro dev:weapp --port 8090",
-    "build": "taro build --type weapp",
+    "build": "taro build --type weapp & node fix-tabbar.js",
+    "dev": "taro build --type weapp --watch --port 8090 & node fix-tabbar.js",
     "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {

@@ -1,1 +1,517 @@
-.page { padding: 16px; font-size: 14px; }
+.index-page {
+  background: #f2f2f7;
+  min-height: 100vh;
+}
+
+/* ===== 共用的 tab 内容层 ===== */
+.tab-content {
+  flex: 1;
+}
+
+/* ===== 乘客端：拼车大厅 ===== */
+.hall-header {
+  background: #ffffff;
+  padding: 12px 20px 14px;
+  border-bottom: 1px solid #e0e0e6;
+}
+
+.hall-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+  display: block;
+}
+
+.hall-subtitle {
+  font-size: 13px;
+  color: #888888;
+  margin-top: 2px;
+  display: block;
+}
+
+.filter-wrap {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.filter-row {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 16px;
+  white-space: nowrap;
+}
+
+.filter-chip {
+  display: inline-flex;
+  border-radius: 20px;
+  padding: 7px 14px;
+  margin-right: 8px;
+  background: #e8e8ee;
+}
+
+.filter-chip.active {
+  background: #A93226;
+}
+
+.filter-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888888;
+}
+
+.filter-text.active {
+  color: #ffffff;
+}
+
+.trip-list {
+  padding: 16px;
+  max-height: calc(100vh - 200px);
+}
+
+.trip-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #e0e0e6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.trip-top-row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.time-tag {
+  border-radius: 6px;
+  padding: 5px 12px;
+  display: inline-flex;
+}
+
+.time-tag-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.seat-badge {
+  background: #111111;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+.seat-badge.full {
+  background: #e8e8ee;
+}
+
+.seat-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.seat-badge.full .seat-text {
+  color: #888888;
+}
+
+.trip-route-row {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.route-from {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.route-arrow {
+  font-size: 20px;
+  color: #888888;
+  margin: 0 12px;
+}
+
+.route-to {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.trip-bottom-row {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.driver-info {
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  display: flex;
+}
+
+.driver-name {
+  font-size: 13px;
+  color: #888888;
+}
+
+.driver-hint {
+  font-size: 11px;
+  color: #888888;
+}
+
+.grab-btn {
+  background: #A93226;
+  border-radius: 10px;
+  padding: 10px 22px;
+}
+
+.grab-btn.disabled {
+  background: #e8e8ee;
+}
+
+.grab-btn-text {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.grab-btn.disabled .grab-btn-text {
+  color: #888888;
+}
+
+.empty-state {
+  padding-top: 80px;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.empty-sub {
+  font-size: 15px;
+  color: #888888;
+  text-align: center;
+  line-height: 22px;
+}
+
+/* ===== 司机端：求拼大厅 ===== */
+.dd-header {
+  background: #1c1c1e;
+  padding: 16px 20px 20px;
+}
+
+.header-top {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+}
+
+.header-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 3px;
+  display: block;
+}
+
+.role-badge {
+  background: rgba(169, 50, 38, 0.3);
+  border-radius: 12px;
+  padding: 5px 10px;
+}
+
+.role-badge-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #A93226;
+}
+
+.active-banner {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(45, 155, 90, 0.6);
+  background: rgba(45, 155, 90, 0.25);
+  border-radius: 10px;
+  padding: 9px 12px;
+  display: flex;
+}
+
+.active-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #2D9B5A;
+}
+
+.active-banner-text {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2D9B5A;
+}
+
+.active-arrow {
+  font-size: 15px;
+  color: #2D9B5A;
+}
+
+.filter-bar {
+  flex-direction: row;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e6;
+  display: flex;
+}
+
+.filter-tab {
+  flex: 1;
+  padding: 13px 0;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+
+.filter-tab.active {
+  border-bottom-color: #A93226;
+}
+
+.filter-tab-text {
+  font-size: 14px;
+  color: #888888;
+  font-weight: 400;
+  text-align: center;
+}
+
+.filter-tab-text.active {
+  color: #A93226;
+  font-weight: 700;
+}
+
+.saved-bar {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e6;
+  padding: 10px 16px;
+}
+
+.saved-label {
+  font-size: 11px;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.saved-chips {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  display: flex;
+}
+
+.saved-chip {
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #e0e0e6;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  display: flex;
+}
+
+.saved-chip-main {
+  padding: 7px 12px;
+}
+
+.saved-chip-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.saved-chip-del {
+  padding: 7px 8px;
+}
+
+.saved-chip-del Text {
+  font-size: 12px;
+  color: #888888;
+}
+
+.req-list {
+  padding: 16px;
+  max-height: calc(100vh - 300px);
+}
+
+.req-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e6;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.req-card.match {
+  border-width: 2px;
+  border-color: #1D6FA4;
+}
+
+.req-top {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.req-route-row {
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 2px;
+  display: flex;
+}
+
+.req-from, .req-to {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.req-arrow {
+  font-size: 14px;
+  color: #888888;
+  margin: 0 4px;
+}
+
+.match-badge {
+  border-radius: 6px;
+  margin-left: 6px;
+  padding: 2px 7px;
+}
+
+.match-text {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.req-time {
+  font-size: 12px;
+  color: #888888;
+  margin-left: 6px;
+}
+
+.req-tags {
+  flex-direction: row;
+  gap: 8px;
+  display: flex;
+}
+
+.tag {
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  padding: 4px 8px;
+  display: flex;
+}
+
+.tag.muted {
+  background: #e8e8ee;
+}
+
+.tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.tag-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888888;
+}
+
+.req-note {
+  font-size: 13px;
+  color: #888888;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.req-actions {
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 2px;
+  display: flex;
+}
+
+.action-btn {
+  flex: 1;
+  border-radius: 12px;
+  padding: 12px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.action-btn-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.phone-btn {
+  background: rgba(45, 155, 90, 0.18);
+  border: 1.5px solid rgba(45, 155, 90, 0.5);
+}
+
+.phone-btn .action-btn-text {
+  color: #2D9B5A;
+  font-weight: 600;
+}
+
+.invite-btn {
+  background: #A93226;
+}
+
+.invite-btn .action-btn-text {
+  color: #ffffff;
+}
+
+.empty-wrap {
+  padding: 48px 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.empty-text {
+  font-size: 15px;
+  color: #888888;
+}
