@@ -1,205 +1,66 @@
 .share-card-page {
   background: #f2f2f7;
+  min-height: 100vh;
+  padding-bottom: 40px;
 }
 
 .not-found {
-  padding: 20px;
-  color: #111111;
-}
-
-.instruction {
-  margin: 20px;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 12px;
-  padding: 14px;
-  border: 1px solid #1D6FA4;
-  background: #e8f4fd;
-  display: flex;
-}
-
-.instruction-text {
-  flex: 1;
-  font-size: 14px;
-  color: #1D6FA4;
-  line-height: 20px;
-}
-
-.share-card-design {
-  margin: 0 20px 16px 20px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
-
-.card-band {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 24px 18px 24px;
-  display: flex;
-}
-
-.seat-count-big {
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.time-tag-big {
-  background: rgba(255, 255, 255, 0.22);
-  border-radius: 10px;
-  padding: 6px 14px;
-}
-
-.time-tag-big-text {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.card-body {
-  padding: 0;
-}
-
-.route-section {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 24px 18px 24px;
-  gap: 10px;
-  display: flex;
-}
-
-.route-city {
-  font-size: 28px;
-  font-weight: 700;
-  color: #111111;
-  letter-spacing: -0.5px;
+  display: block;
+  padding: 40px 20px;
   text-align: center;
-  flex-shrink: 1;
-}
-
-.arrow-big {
-  border-radius: 20px;
-  padding: 8px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.arrow-big-text {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.divider-row {
-  padding: 0 24px;
-  margin-bottom: 16px;
-  overflow: hidden;
-}
-
-.divider-text {
-  font-size: 14px;
-  letter-spacing: 2px;
-  display: block;
-}
-
-.card-footer {
-  flex-direction: row;
-  align-items: center;
-  padding: 0 24px 20px 24px;
-  gap: 14px;
-  display: flex;
-}
-
-.cta-wrap {
-  flex: 1;
-}
-
-.cta-main {
   color: #111111;
-  font-size: 17px;
-  font-weight: 700;
-  display: block;
-}
-
-.cta-sub {
-  color: #888888;
-  font-size: 13px;
-  margin-top: 3px;
-  display: block;
-}
-
-.cta-badge {
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
-  border-radius: 30px;
-  padding: 12px 18px;
-  display: flex;
-}
-
-.cta-badge-text {
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.watermark {
-  padding: 0 24px 16px 24px;
-}
-
-.watermark-text {
-  color: #bbbbbb;
-  font-size: 11px;
-}
-
-.tip {
-  text-align: center;
-  font-size: 13px;
-  color: #888888;
-  margin-top: -4px;
-  margin-bottom: 16px;
-  padding-left: 20px;
-  display: block;
-}
-
-.share-footer {
-  padding: 12px 20px 16px 20px;
-  border-top: 1px solid #e0e0e6;
-  gap: 10px;
-  background: #f2f2f7;
-}
-
-.share-btn {
-  border-radius: 16px;
-  padding: 16px 0;
-  background: #2D9B5A;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.share-btn-text {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.board-menu-btn {
-  border-radius: 14px;
-  padding: 13px 0;
-  background: #ffffff;
-  border: 1px solid #e0e0e6;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.board-menu-btn-text {
   font-size: 16px;
+}
+
+.back-btn {
+  margin: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+/* 底部提示区域 */
+.bottom-tips {
+  margin: 20px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e6;
+}
+
+.tips-title {
+  display: block;
+  font-size: 15px;
   font-weight: 600;
   color: #111111;
+  margin-bottom: 12px;
 }
+
+.tips-list {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.tips-item {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  padding-left: 8px;
+}
+
+/* 返回按钮区域 */
+.back-section {
+  margin: 20px;
+}
+
+.back-home-btn {
+  width: 100%;
+  background: #f0f0f0;
+  color: #666666;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+/* 复用组件样式 */
+@import '../../components/DriverShareCard/index.scss';
+@import '../../components/PassengerShareCard/index.scss';

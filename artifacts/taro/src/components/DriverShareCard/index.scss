@@ -1,0 +1,303 @@
+.share-card-wrapper {
+  background: #f2f2f7;
+}
+
+.share-card-wrapper.compact {
+  margin: 0;
+  background: transparent;
+}
+
+/* 提示区域 */
+.instruction {
+  margin: 20px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid #1D6FA4;
+  background: #e8f4fd;
+  display: flex;
+}
+
+.instruction-icon {
+  font-size: 18px;
+}
+
+.instruction-text {
+  flex: 1;
+  font-size: 14px;
+  color: #1D6FA4;
+  line-height: 20px;
+}
+
+/* 卡片设计 */
+.share-card-design {
+  margin: 0 20px 16px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.compact .share-card-design {
+  margin: 0;
+}
+
+/* 顶部彩条 */
+.card-band {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 18px 24px;
+  display: flex;
+}
+
+.left-section {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.seat-count-big {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.status-tag {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.time-tag-big {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  padding: 6px 14px;
+}
+
+.time-tag-big-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 卡片主体 */
+.card-body {
+  padding: 0;
+  background: #ffffff;
+}
+
+/* 路线区域 */
+.route-section {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 24px 18px 24px;
+  gap: 10px;
+  display: flex;
+}
+
+.route-city {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: -0.5px;
+  text-align: center;
+  flex-shrink: 1;
+}
+
+.arrow-big {
+  border-radius: 20px;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.arrow-big-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 关键信息区域 */
+.info-section {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 24px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  background: #fafafa;
+}
+
+.info-item {
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  display: flex;
+}
+
+.info-label {
+  font-size: 18px;
+}
+
+.info-value {
+  font-size: 13px;
+  color: #666666;
+  font-weight: 500;
+}
+
+/* 已接乘客区域 */
+.passenger-section {
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 24px;
+  display: flex;
+}
+
+.passenger-tag {
+  background: #E8F5E9;
+  color: #2E7D32;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 分割线 */
+.divider-row {
+  padding: 0 24px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.divider-text {
+  font-size: 14px;
+  letter-spacing: 2px;
+  display: block;
+}
+
+/* CTA区域 */
+.card-footer {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 24px 20px 24px;
+  gap: 14px;
+  display: flex;
+}
+
+.cta-wrap {
+  flex: 1;
+}
+
+.cta-main {
+  color: #111111;
+  font-size: 17px;
+  font-weight: 700;
+  display: block;
+}
+
+.cta-sub {
+  color: #888888;
+  font-size: 13px;
+  margin-top: 3px;
+  display: block;
+}
+
+.cta-badge {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  border-radius: 30px;
+  padding: 12px 18px;
+  display: flex;
+}
+
+.cta-badge-text {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* 联系方式区域 */
+.contact-section {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px 16px 24px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  background: #fafafa;
+}
+
+.contact-text {
+  font-size: 14px;
+  color: #666666;
+}
+
+.contact-phone {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.phone-text {
+  font-size: 14px;
+  color: #1D6FA4;
+  font-weight: 500;
+}
+
+/* 水印 */
+.watermark {
+  padding: 0 24px 16px 24px;
+}
+
+.watermark-text {
+  color: #bbbbbb;
+  font-size: 11px;
+}
+
+/* 操作按钮区域 */
+.action-buttons {
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 20px 16px 20px;
+  display: flex;
+}
+
+.share-btn {
+  border-radius: 16px;
+  padding: 16px 0;
+  background: #2D9B5A;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.share-btn-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.update-btn {
+  border-radius: 14px;
+  padding: 13px 0;
+  background: #ffffff;
+  border: 1px solid #1D6FA4;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.update-btn-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1D6FA4;
+}

@@ -137,3 +137,67 @@
 .passenger-action-btn.remove {
   background: #A93226;
 }
+
+.passenger-action-btn.update-share {
+  background: #1D6FA4;
+}
+
+/* 快捷分享区域 */
+.quick-share-section {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e6;
+}
+
+.share-buttons {
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.share-action-btn {
+  flex: 1;
+  border-radius: 12px;
+  padding: 16px 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  display: flex;
+}
+
+.share-action-btn.primary {
+  background: #2D9B5A;
+}
+
+.share-action-btn.secondary {
+  background: #ffffff;
+  border: 2px solid #1D6FA4;
+}
+
+.share-btn-icon {
+  font-size: 24px;
+}
+
+.share-btn-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.share-action-btn.secondary .share-btn-text {
+  color: #1D6FA4;
+}
+
+.share-tip {
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.5;
+  padding: 8px 12px;
+  background: #fafafa;
+  border-radius: 8px;
+  display: block;
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Button, ScrollView, Picker } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { useApp } from '../../store/appContext';
+import shareService from '../../services/shareService';
 import './index.scss';
 
 const ROUTES = [
@@ -43,8 +44,29 @@ export default function DriverPublish() {
         price: '10元',
       });
       addSavedRoute({ from: route.from, to: route.to });
-      Taro.showToast({ title: '发布成功', icon: 'success' });
-      setTimeout(() => Taro.navigateTo({ url: '/pages/driver-board/index' }), 1000);
+
+      // 显示发布成功提示
+      await Taro.showToast({ title: '发布成功', icon: 'success', duration: 1500 });
+
+      // 延迟后显示分享选项
+      setTimeout(async () => {
+        const shareChoice = await Taro.showModal({
+          title: '车次已发布',
+          content: '是否现在分享到微信群，让更多乘客看到？',
+          confirmText: '立即分享',
+          cancelText: '稍后再说',
+        });
+
+        if (shareChoice.confirm) {
+          // 跳转到分享卡片页面
+          Taro.redirectTo({
+            url: `/pages/share-card/index?mode=driver&tripId=${trip.id}&source=publish`,
+          });
+        } else {
+          // 跳转到司机看板
+          Taro.redirectTo({ url: '/pages/driver-board/index' });
+        }
+      }, 500);
     } catch (e) {
       Taro.showToast({ title: '发布失败', icon: 'error' });
     }

@@ -2,11 +2,12 @@ import React from 'react';
 import { View, Text } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import { useApp } from '../../store/appContext';
+import shareService from '../../services/shareService';
 import './index.scss';
 
 export default function TripSuccess() {
   const tripId = Taro.getCurrentInstance().router?.params?.tripId as string | undefined;
-  const { trips, myBookings } = useApp();
+  const { trips, myBookings, myPassengerRequests } = useApp();
 
   const trip = trips.find((t) => t.id === tripId) ?? trips[0];
   const booking = myBookings.find((b) => b.tripId === tripId);
@@ -93,6 +94,36 @@ export default function TripSuccess() {
         {/* Call button */}
         <View className="call-btn" onClick={callDriver}>
           <Text className="call-btn-text">📞 一键拨打司机电话</Text>
+        </View>
+
+        {/* Share section for passengers */}
+        <View className="share-section">
+          <Text className="share-section-title">📢 告诉更多人</Text>
+          <Text className="share-section-sub">还有人在找车吗？分享给TA</Text>
+          <View
+            className="share-action-btn"
+            onClick={() => {
+              // 如果有我的拼车需求，分享拼车需求
+              const request = myPassengerRequests.find(
+                (r) =>
+                  r.route.from === trip.route.from &&
+                  r.route.to === trip.route.to
+              );
+
+              if (request) {
+                Taro.navigateTo({
+                  url: `/pages/share-card/index?mode=passenger&requestId=${request.id}&source=trip_success`,
+                });
+              } else {
+                // 否则分享这个车次
+                Taro.navigateTo({
+                  url: `/pages/share-card/index?mode=driver&tripId=${trip.id}&source=trip_success`,
+                });
+              }
+            }}
+          >
+            <Text className="share-action-btn-text">📤 分享到微信群</Text>
+          </View>
         </View>
 
         <View className="back-btn" onClick={() => Taro.switchTab({ url: '/pages/index/index' })}>
